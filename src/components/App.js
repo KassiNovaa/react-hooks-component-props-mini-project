@@ -7,7 +7,7 @@ console.log(blogData);
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header name = {blogData.name}/>
     </div>
   );
 }
