@@ -1,6 +1,13 @@
-function (){
-    <aside>
-        <img className="image" src="https://via.placeholder.com/215" alt="Blog Logo"></img>
-        
-    </aside>
+const About = ( {image,about} ) =>{
+    return (
+        <aside>
+            <img 
+                src={image} 
+                alt={"blog logo"}>
+            </img>
+            <p> {about} </p>
+        </aside>
+    )
 }
+
+export default About
