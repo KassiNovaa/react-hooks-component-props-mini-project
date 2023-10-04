@@ -1,16 +1,17 @@
+import React from "react";
 import Article from "./Article"
 
-const ArticleList = ({posts}) => {
-    const Array = posts.map((posts) => (
+const ArticleList = ({posts: postsobj}) => {
+    const ArticleComp = postsobj.map((postobj) => (
         <Article
-        key = {posts.id}
-        title = {posts.title}
-        date = {posts.date}
-        preview = {posts.preview}
+        key = {postobj.id}
+        title = {postobj.title}
+        date = {postobj.date}
+        preview = {postobj.preview}
         />
     ));
     return (
-        <main>{Array}</main>
+        <main>{ArticleComp}</main>
     )
 }
 
